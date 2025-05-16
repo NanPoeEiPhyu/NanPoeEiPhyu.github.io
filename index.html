@@ -1,0 +1,228 @@
+head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>နန်းပိုးအိဖြူ - ကိုယ်ရေးအကျဉ်း</title>
+    <style>
+        /* CSS Styling */
+        :root {
+            --primary-color: #1e90ff;
+            --secondary-color: #f8f9fa;
+            --text-color: #333;
+            --light-blue: #e6f2ff;
+        }
+        
+        body {
+            font-family: 'Padauk', 'Myanmar3', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--light-blue);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .badge {
+            background-color: var(--light-blue);
+            color: var(--primary-color);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .hobby {
+            flex: 1;
+            min-width: 120px;
+            text-align: center;
+            padding: 15px;
+            background-color: var(--light-blue);
+            border-radius: 8px;
+        }
+        
+        .hobby i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://via.placeholder.com/150" alt="နန်းပိုးအိဖြူ" class="profile-img">
+            <h1>နန်းပိုးအိဖြူ</h1>
+            <p>Grade 10 ကျောင်းသူ | တောင်ကလေးဘုန်းတော်ကြီးသင်ပညာရေးကျောင်း</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="about">
+            <h2>အကြောင်းအရာ</h2>
+            <p>မင်္ဂလာပါ! ကျွန်မနာမည်က နန်းပိုးအိဖြူပါ။ ကရင်ပြည်နယ်၊ လှိုင်းဘွဲမြို့နယ်၊ ထန်းတပင်ကျေးရွာမှာ နေထိုင်ပါတယ်။ တောင်ကလေးဘုန်းတော်ကြီးသင်ပညာရေးကျောင်းက Grade 10 ကျောင်းသူတစ်ယောက်ဖြစ်ပါတယ်။</p>
+            
+            <p>ကျောင်းစာတွေကို ကြိုးစားသင်ယူလေ့လာနေပြီး မိဘအားကိုးရတဲ့ သမီးလိမ္မာလေးဖြစ်ဖို့ ရည်မှန်းထားပါတယ်။ ပျော်ပျော်ပါးပါးနေရတာကို အရမ်းကြိုက်နှစ်သက်ပါတယ်။</p>
+        </section>
+        
+        <section id="education">
+            <h2>ပညာရေး</h2>
+            <p><strong>ကျောင်း:</strong> တောင်ကလေးဘုန်းတော်ကြီးသင်ပညာရေးကျောင်း</p>
+            <p><strong>အတန်း:</strong> Grade 10</p>
+            
+            <h3>ရရှိထားသော အောင်လက်မှတ်များ</h3>
+            <div class="badges">
+                <span class="badge">ပါဠိကေတုဆု (သုကုမာရမဂ္ဂဒီပနီ)</span>
+                <span class="badge">ကရင်စာပေ (လိက်ဏီ့ဆင့်)</span>
+                <span class="badge">သုတမယတန်း</span>
+                <span class="badge">ဓမ္မဂဝေသီတန်း</span>
+            </div>
+        </section>
+        
+        <section id="hobbies">
+            <h2>ဝါသနာများ</h2>
+            <div class="hobbies">
+                <div class="hobby">
+                    <i class="fas fa-music"></i>
+                    <p>သီချင်းနားထောင်ခြင်း</p>
+                </div>
+                <div class="hobby">
+                    <i class="fas fa-yarn"></i>
+                    <p>ချည်ထိုးခြင်း</p>
+                </div>
+                <div class="hobby">
+                    <i class="fas fa-table-tennis"></i>
+                    <p>ကြက်တောင်ရိုက်ခြင်း</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>ပရောဂျက်များ</h2>
+            <p><strong>Hydroponic Project:</strong> Hydroponic နည်းပညာကို အသုံးပြုပြီး အပင်များစိုက်ပျိုးခြင်းဆိုင်ရာ ပရောဂျက်တစ်ခုကို လုပ်ဆောင်ခဲ့ပါတယ်။</p>
+        </section>
+        
+        <section id="goals">
+            <h2>ရည်မှန်းချက်</h2>
+            <p>ကျွန်မရဲ့ ရည်မှန်းချက်ကတော့ <strong>"ကမ္ဘာပတ်"</strong> ဖြစ်ပါတယ်။ ကမ္ဘာကြီးကို လှည့်ပတ်ပြီး အခြားယဉ်ကျေးမှုတွေကို လေ့လာဖို့၊ အတွေ့အကြုံသစ်တွေရဖို့ ဆန္ဒရှိပါတယ်။</p>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 နန်းပိုးအိဖြူ. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add animation to sections when they come into view
+            const sections = document.querySelectorAll('section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(section);
+            });
+            
+            // Change header color on scroll
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.style.backgroundColor = 'rgba(30, 144, 255, 0.9)';
+                } else {
+                    header.style.backgroundColor = 'var(--primary-color)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
